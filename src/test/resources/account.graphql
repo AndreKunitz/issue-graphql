@@ -1,0 +1,6 @@
+mutation {
+    createAccount(email: "me@github.com", password: "123") {
+        email
+        password
+    }
+}
