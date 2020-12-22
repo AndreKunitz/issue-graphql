@@ -7,10 +7,12 @@ import com.graphql.spring.boot.test.GraphQLTest;
 import com.graphql.spring.boot.test.GraphQLTestTemplate;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.ComponentScan;
 import static graphql.Assert.assertNotNull;
 import static graphql.Assert.assertTrue;
 
 @GraphQLTest
+@ComponentScan("me.github.andrekunitz.issueexemple")
 class UserQueryTest {
 
 	@Autowired GraphQLTestTemplate graphQLTestTemplate;
